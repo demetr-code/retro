@@ -528,14 +528,15 @@ h3 {
         width: 100%;
         max-width: 445px;
         margin-left: auto;
+        
     }
     
     .title__main {
         text-transform: uppercase;
-        font-size: 50px;
+        font-size: 80px;
         margin-bottom: 20px;
         color: #e7e7e7;
-       
+        
     }
     
     .athlets_640 {
@@ -543,7 +544,8 @@ h3 {
     }
     
     .athlets_641 {
-        height: 590px;  
+        display: block;
+        width: 170px;
     }
     
     .description__section {
