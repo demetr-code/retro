@@ -9,7 +9,7 @@
 <body>
     
     <header class="header">
-      <div class="container">
+      <div class="container_header">
          <a href="#" class="header__logo">
             <svg width="195" height="60" viewBox="0 0 972 264" xmlns="http://www.w3.org/2000/svg">
   <g>
@@ -60,20 +60,20 @@
     
     <main>
         <section>
-           
             <div class="white">
-                   <div class="container">
+                   <div class="container_main_right">
                         <h2 class="title__main">Athlets</h2>
-                        <picture>
-                            <source srcset="images/footballer_497.png" media="(min-width: 641px) and (max-width: 960px)">
-                            <source srcset="images/footballer_566.png" media="min-width: 961px">
-                            <img src="images/footballer_192.png" class="athlets_640">
+                        <picture class="athlets_641">
+                            <source srcset="https://demetr-code.github.io/retro/images/footballer_192.png" media="(max-width: 460px)" class="athlets_641">
+                            <source srcset="https://demetr-code.github.io/retro/images/footballer_497.png" media="(max-width: 960px)" class="athlets_641">
+
+                            <img src="https://demetr-code.github.io/retro/images/footballer_566.png">
                         </picture>
                     </div>
                 </div>
 
             <div class="gray__middle">
-                   <div class="container">
+                   <div class="container_main_right">
                         <div class="description__section">
                             <div class="number__description">01</div>
                             <h3 class="title__description">Connection</h3>
@@ -87,7 +87,7 @@
 
             <div class="gray">
 
-                    <div class="container">
+                    <div class="container_main_right">
                         <div class="description__section">
                             <div class="number__description">02</div>
                             <h3 class="title__description">Collaboration</h3>
@@ -100,7 +100,7 @@
                 </div>
 
             <div class="violet">
-                <div class="container">
+                <div class="container_main_right">
                     <div class="description__section">
                         <div class="number__description__black">03</div>
                         <h3 class="title__description__gray">Growth</h3>
@@ -114,17 +114,20 @@
             
 
             <div class="white">
-                <div class="container">
+                <div class="container_main_left">
                     <h2 class="title__main">Players</h2>
-                    
-                    <picture>
-                        <img src="images/basketballer_302.png" alt="footballer" class="player">
+                        
+                    <picture class="player">
+                        <source srcset="images/basketballer_302.png" media="(max-width: 460px)">
+                        <source srcset="images/basketballer_436.png" media="(max-width: 960px)">
+                        
+                        <img src="images/basketballer_991.png" alt="footballer">
                     </picture>
                 </div>
             </div>
 
             <div class="gray__middle">
-               <div class="container">
+               <div class="container_main_left">
                     <div class="description__section">
                         <div class="number__description">01</div>
                         <h3 class="title__description">Connection</h3>
@@ -138,7 +141,7 @@
 
             <div class="gray">
 
-                <div class="container">
+                <div class="container_main_left">
                     <div class="description__section">
                         <div class="number__description">02</div>
                         <h3 class="title__description">Collaboration</h3>
@@ -151,7 +154,7 @@
             </div>
 
             <div class="blue">
-                <div class="container">
+                <div class="container_main_left">
                     <div class="description__section">
                         <div class="number__description__violet">03</div>
                         <h3 class="title__description__gray">Growth</h3>
@@ -164,7 +167,7 @@
             </div>
         </section>  
           
-        <section>   
+        <section class="chess">   
             <div class="with_image"> 
                 <picture>
                     <img src="images/be-active_640.jpg" alt="footballer" class="with_image_bg">
@@ -177,7 +180,7 @@
                 </div>
             </div>
 
-            <div class="white">
+            <div class="white_chess">
                 <div class="container">
                     <h2 class="title__main__with__image">Be active</h2>
 
@@ -235,21 +238,27 @@
    
     
     <footer class="footer">
-        <div class="container">
-           <button class="footer_btn_square" type="button">
-                  <svg width="60" height="50" viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
-  <g>
-    <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z"/>
-    <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-</svg>
+        <div class="container_footer">
+          <span class="footer__inherit">
+              <button class="footer_btn_square" type="button">
+            
+                  
+                      <svg width="60" height="50" viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                        <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z"/>
+                        <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                    
+               
            </button>
       
          
-          <div class="footer__title">
+              <div class="footer__title">
               <h2 class="footer__title__text">Download app</h2>
               <span class="footer__title__text__buttom" >Show everyone what you can do!</span>
           </div>
+          </span>
           
           <div class="footer__btns">
               <button class="footer_btn" type="button">

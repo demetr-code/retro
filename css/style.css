@@ -28,7 +28,7 @@ h3 {
 /* ========== Header ========== */
 
 @media (max-width: 640px) {
-    .container {
+    .container_header {
         width: 100%;
         max-width: 280px;
         margin: 0px auto;
@@ -131,7 +131,7 @@ h3 {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
-    .container {
+    .container_header {
         width: 100%;
         max-width: 704px;
         margin: 0 auto;
@@ -235,7 +235,7 @@ h3 {
 }
 
 @media (min-width: 961px) {
-    .container {
+    .container_header {
         width: 100%;
         max-width: 1560px;
         margin: 0 auto;
@@ -343,6 +343,31 @@ h3 {
 
 
 @media (max-width: 640px) {
+    .container_main_right {
+        width: 100%;
+        max-width: 280px;
+        margin: 0px auto;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .container_main_left {
+        width: 100%;
+        max-width: 280px;
+        margin: 0px auto;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 280px;
+        margin: 0px auto;
+        position: relative;
+        z-index: 1;
+    }
+    
+    
     
     .title__main {
         text-transform: uppercase;
@@ -352,15 +377,13 @@ h3 {
     }
     
     .athlets_640 {
-        width: 170px;
+        width: 190px;
         
         display: block;
         margin: 0 auto -40px;
     }
     
-    .athlets_641 {
-        display: none;
-    }
+   
     
     .description__section {
         margin-bottom: 25px;
@@ -525,19 +548,36 @@ h3 {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
-    .container__right {
+    
+    .container_main_right {
         width: 100%;
-        max-width: 445px;
-        margin-left: auto;
+        max-width: 455px;
+        margin: 0 45px 0 290px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .athlets_641 {
+        position: absolute;
+        left: -450px;
+        top: 3;
+    }
+    
+    .container_main_left {
+        width: 100%;
+        max-width: 455px;
+        margin: 0 340px 0 30px;
+        max-width: 390px;
         
+        position: relative;
     }
     
     .title__main {
         text-transform: uppercase;
         font-size: 80px;
-        margin-bottom: 20px;
         color: #e7e7e7;
-        
+        margin-top: 25px;
+       
     }
     
     .description__section {
@@ -549,13 +589,13 @@ h3 {
     
     .number__description {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 18px;
     }
     
     .number__description:after {
         content: "";
         display: block;
-        width: 16px;
+        width: 21px;
         height: 4px;
         border-radius: 20%;
         background-color: #5e42b0;
@@ -563,14 +603,14 @@ h3 {
     
     .number__description__black {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 18px;
         color: #000000;
     }
     
     .number__description__black:after {
         content: "";
         display: block;
-        width: 16px;
+        width: 21px;
         height: 4px;
         border-radius: 20%;
         background-color: #ffffff;
@@ -578,14 +618,14 @@ h3 {
     
     .number__description__white {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 24px;
         color: #ffffff;
     }
     
     .number__description__white:after {
         content: "";
         display: block;
-        width: 15px;
+        width: 25px;
         height: 4px;
         border-radius: 10%;
         background-color: #8f7bc8;
@@ -594,7 +634,7 @@ h3 {
     
     .title__description {
         text-transform: uppercase;
-        font-size: 23px;
+        font-size: 32px;
         color: #e7e7e7;
         margin-left: 10px;
     }
@@ -602,30 +642,32 @@ h3 {
     .title__description__gray {
         color: #c1c1c1;
         text-transform: uppercase;
-        font-size: 23px;
+        font-size: 32px;
         margin-left: 10px;
     }
     
     .text_body {
-        font-size: 15px;
+        font-size: 16px;
         padding-right: 15px;
+        line-height: 170%;
     }
     
     .text_body_white {
-        font-size: 15px;
+        font-size: 16px;
         padding-right: 20px;
         color: #dedbed;
+        line-height: 170%;
     }
     
     .white {
         padding-top: 25px;
-        padding-bottom: 25px;
     }
     
     .gray__middle {
         width: 100%;
         background-color: #fafafa;
         padding: 50px 0;
+        
     }
     
     .gray {
@@ -641,9 +683,12 @@ h3 {
     }
     
     .player {
-        width: 300px;
-        margin-left: -10px;
-        margin: 0 auto -60px;
+        
+        height: 480px;
+        top: 15px;
+        right: -80%;
+        
+        position: absolute;
     }
     
     .blue {
@@ -678,11 +723,18 @@ h3 {
         
     }
     
+    .container {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+       
+    }
+    
     .square {
-        width: 70px;
-        height: 70px;
+        width: 115px;
+        height: 115px;
         background-color: #5e42b0;
-        margin-top: -60px;
+        margin-top: -80px;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -691,14 +743,249 @@ h3 {
     
     .title__main__with__image {
         text-transform: uppercase;
-        font-size: 28px;
+        font-size: 80px;
         margin-bottom: 25px;
         color: #e7e7e7;
+        margin-top: 50px;
     }
     
     .text__body__with__image {
+        font-size: 24px;
+        padding-right: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 961px) {
+    
+    .container_main_right {
+        
+        max-width: 700px;
+        margin-left: 50%;
+        margin-right: 18.5%;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .athlets_641 {
+        position: absolute;
+        left: -700px;
+        top: 0;
+    }
+    
+    
+    .title__main {
+        text-transform: uppercase;
+        font-size: 80px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        color: #e7e7e7;  
+    }
+    
+    .description__section {
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .number__description {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    
+    .number__description:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 4px;
+        border-radius: 20%;
+        background-color: #5e42b0;
+    }
+    
+    .number__description__black {
+        font-weight: 700;
+        font-size: 18px;
+        color: #000000;
+    }
+    
+    .number__description__black:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 4px;
+        border-radius: 20%;
+        background-color: #ffffff;
+    }
+    
+    .number__description__white {
+        font-weight: 700;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    
+    .number__description__white:after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 4px;
+        border-radius: 10%;
+        background-color: #8f7bc8;
+        margin-top: 2px;
+    }
+    
+    .title__description {
+        text-transform: uppercase;
+        font-size: 36px;
+        color: #e7e7e7;
+        margin-left: 10px;
+    }
+    
+    .title__description__gray {
+        color: #c1c1c1;
+        text-transform: uppercase;
+        font-size: 36px;
+        margin-left: 10px;
+    }
+    
+    .text_body {
+        font-size: 20px;
+        padding-right: 15px;
+        line-height: 170%;
+    }
+    
+    .text_body_white {
         font-size: 16px;
         padding-right: 20px;
+        color: #dedbed;
+        line-height: 170%;
+    }
+    
+    .white {
+        padding-top: 25px;
+        
+    }
+    
+    .gray__middle {
+        width: 100%;
+        background-color: #fafafa;
+        padding: 50px 0;
+    }
+    
+    .gray {
+        background-color: #f5f4f9;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .violet {
+        background-color: #5e42b0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .container_main_left {
+        
+        position: relative;
+        margin-left: 18.5%;
+        margin-right: 50%;
+        max-width: 700px;
+        
+    }
+    
+    .player {
+        left: 75%;
+        top: -50%;
+        
+        
+        position: absolute;
+    }
+    
+    .blue {
+        background-color: #090c35;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .number__description__violet {
+        font-weight: 700;
+        font-size: 14px;
+        color: #8765dd;
+    }
+    
+    .number__description__violet:after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 4px;
+        border-radius: 10%;
+        background-color: #ffffff;
+        margin-top: 2px;
+    }
+    
+    .chess {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .with_image {
+        display: block;
+        width: 50%;
+        max-height: 730px;
+        position: relative;
+    }
+    
+    .with_image_bg {
+        width: 100%;
+        text-align: center;
+        background-size: cover;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+        padding-left: 120px;
+        
+        
+       
+    }
+    
+    .title__main__with__image {
+        text-transform: uppercase;
+        font-size: 80px;
+        margin-bottom: 25px;
+        color: #e7e7e7;
+        margin-top: 35%;
+        
+        
+    }
+    
+    .square {
+        width: 115px;
+        height: 115px;
+        background-color: #5e42b0;
+        
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        z-index: 2;
+        top: 38%;
+        right: -57.5px;
+    }
+    
+    .white_chess {
+        display: block;
+        width: 50%;
+        
+        padding-top: 25px;
+    }
+    
+    .text__body__with__image {
+        font-size: 24px;
+        padding-right: 30px;
     }
 }
 
@@ -710,7 +997,7 @@ h3 {
 @media (max-width: 640px) {
     .footer {
         padding-top: 100px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         position: relative;
         background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_767.jpg);
         background-color: #0a0e34;
@@ -729,6 +1016,15 @@ h3 {
         left: 0;
         right: 0;
         bottom: 0;
+    }
+    
+    .container_footer {
+        width: 100%;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;
     }
     
     .footer_btn_square {
@@ -794,15 +1090,244 @@ h3 {
     
     .footer__logo {
         width: 135px;
-        height: 40px;
+        height: auto;
         fill: #ffffff;
         display: flex;
         justify-content: center;
-        margin: 80px auto 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
     }
 }
 
+@media (min-width: 641px) and (max-width: 960px) {
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 20px;
+        position: relative;
+        background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_767.jpg);
+        background-color: #0a0e34;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 25px;
+    }
+    
+    .footer:after {
+        content: "";
+        opacity: 0.88;
+        background-color: #0a0e34;
 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .container_footer {
+        width: 100%;
+        max-width: 704px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    
+    
+    .footer_btn_square {
+        width: 130px;
+        height: 130px;
+        border: 0;
+        background-color: #5e42b0;
+        
+        border-radius: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        fill: #ffffff;
+        margin: auto;
+    }
+    
+    .footer__title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+        margin-bottom: 280px;
+    }
+    
+    .footer__title__text {
+        font-size: 80px;
+        color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+    }
+    
+    .footer__title__text__buttom {
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #9b8ec1;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .footer__btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer_btn {
+        width: 315px;
+        height: 80px;
+        border: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #5e42b0;
+        
+        
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        fill: #ffffff;
+        color: #fff;
+    }
+    
+    .footer_btn:last-child {
+        margin-left: 35px;
+    }
+    
+    .footer__logo {
+        width: 212px;
+        height: auto;
+        fill: #ffffff;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 961px) {
+    
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 20px;
+        position: relative;
+        background-image: url(https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/img/game_1280.jpg);
+        background-color: #0a0e34;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .footer:after {
+        content: "";
+        opacity: 0.88;
+        background-color: #0a0e34;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .container_footer {
+        width: 100%;
+        max-width: 704px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .footer__inherit {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .footer_btn_square {
+        min-width: 130px;
+        height: 130px;
+        border: 0;
+        background-color: #5e42b0;
+        
+        border-radius: 20%;
+        
+        cursor: pointer;
+        fill: #ffffff;
+        
+        margin-top: 65px;
+    }
+    
+    .footer__title {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+        margin-bottom: 160px;
+        margin-left: 40px;
+    }
+    
+    .footer__title__text {
+        min-width: 715px;
+        font-size: 80px;
+        color: #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+    }
+    
+    .footer__title__text__buttom {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #9b8ec1;
+    }
+    
+    .footer__btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer_btn {
+        width: 315px;
+        height: 80px;
+        border: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #5e42b0;
+        
+        
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        fill: #ffffff;
+        color: #fff;
+    }
+    
+    .footer_btn:last-child {
+        margin-left: 35px;
+    }
+    
+    .footer__logo {
+        width: 212px;
+        height: auto;
+        fill: #ffffff;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 250px;
+    }
+    
+}
 
 
 
