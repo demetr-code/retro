@@ -66,17 +66,14 @@ h3 {
         margin: 0 auto;
     }
     
-    .header__title {
-        margin-top: 180px;
-        margin-bottom: 130px;
-    }
-    
     .header__title__text {
         font-size: 28px;
         color: #fff;
         display: flex;
         flex-direction: column;
         text-transform: uppercase;
+        margin-top: 180px;
+        margin-bottom: 130px;
     }
     
     .header__title__text__right {
@@ -166,12 +163,6 @@ h3 {
         justify-content: center;
     }
     
-    .header__title {
-        margin-top: 180px;
-        margin-bottom: 220px;
-        
-    }
-    
     .header__title__text {
         font-size: 64px;
         color: #fff;
@@ -179,6 +170,8 @@ h3 {
         flex-direction: column;
         text-transform: uppercase;
         margin: 0 20px;
+        margin-top: 180px;
+        margin-bottom: 220px;
     }
     
     .header__title__text__right {
@@ -269,12 +262,6 @@ h3 {
         justify-content: center;
     }
     
-    .header__title {
-        margin-top: 180px;
-        margin-bottom: 220px;
-        
-    }
-    
     .header__title__text {
         font-size: 100px;
         width: 100%;
@@ -283,6 +270,10 @@ h3 {
         display: flex;
         flex-direction: column;
         text-transform: uppercase;
+        margin-top: 180px;
+        margin-bottom: 220px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
     
     .header__title__text__right {
@@ -366,7 +357,6 @@ h3 {
         position: relative;
         z-index: 1;
     }
-    
     
     
     .title__main {
@@ -778,7 +768,6 @@ h3 {
         text-transform: uppercase;
         font-size: 80px;
         margin-bottom: 20px;
-        margin-top: 50px;
         color: #e7e7e7;  
     }
     
@@ -928,6 +917,12 @@ h3 {
         flex-wrap: wrap;
     }
     
+    .inner_chess_row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
     .inner_chess_row_reverse {
         display: flex;
         flex-wrap: wrap;
@@ -936,17 +931,19 @@ h3 {
     }
     
     .inner_chess {
-        display: block;
+        display: flex;
         width: 50%;
         max-height: 730px;
         position: relative;
         background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
     }
     
     .with_image_bg {
+
         width: 100%;
-        text-align: center;
-        background-size: cover;
+        
     }
     
     .container {
@@ -964,9 +961,6 @@ h3 {
         font-size: 77px;
         margin-bottom: 25px;
         color: #e7e7e7;
-        margin-top: 35%;
-        
-        
     }
     
     .square {
@@ -1045,7 +1039,7 @@ h3 {
         z-index: 1;
     }
     
-    .footer_btn_square {
+    .footer_square {
         width: 72px;
         height: 72px;
         border: 0;
@@ -1151,7 +1145,7 @@ h3 {
     }
     
     
-    .footer_btn_square {
+    .footer_square {
         width: 130px;
         height: 130px;
         border: 0;
@@ -1161,7 +1155,7 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
+        
         fill: #ffffff;
         margin: auto;
     }
@@ -1257,7 +1251,7 @@ h3 {
     
     .container_footer {
         width: 100%;
-        max-width: 704px;
+        max-width: 1200px;
         margin: 0 auto;
         position: relative;
         z-index: 1;
@@ -1265,11 +1259,14 @@ h3 {
     
     .footer__inherit {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
+        
+        margin-top: 55px;
+        margin-bottom: 160px;
     }
     
-    .footer_btn_square {
+    .footer_square {
         min-width: 130px;
         height: 130px;
         border: 0;
@@ -1277,17 +1274,18 @@ h3 {
         
         border-radius: 20%;
         
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         fill: #ffffff;
         
-        margin-top: 65px;
+        
     }
     
     .footer__title {
         display: flex;
         flex-direction: column;
-        margin-top: 55px;
-        margin-bottom: 160px;
+        
         margin-left: 40px;
     }
     
