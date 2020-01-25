@@ -43,6 +43,7 @@ h3 {
         background-color: #0a0e34;
         background-position: 50% 0;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .header:after {
@@ -143,6 +144,7 @@ h3 {
         background-color: #0a0e34;
         background-position: 50% 0;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .header:after {
@@ -279,7 +281,7 @@ h3 {
     .header__title__text__right {
         display: flex;
         justify-content: flex-end;
-        
+        padding-left: 180px;
     }
     
     .header__btns {
@@ -352,8 +354,11 @@ h3 {
     
     .container {
         width: 100%;
-        max-width: 280px;
-        margin: 0px auto;
+        
+        margin-top: 85px;
+        margin-bottom: 85px;
+        padding-left: 30px;
+        padding-right: 30px;
         position: relative;
         z-index: 1;
     }
@@ -526,13 +531,13 @@ h3 {
     
     .title__main__with__image {
         text-transform: uppercase;
-        font-size: 28px;
-        margin-bottom: 25px;
+        font-size: 50px;
+        margin-bottom: 30px;
         color: #e7e7e7;
     }
     
-    .text__body__with__image {
-        font-size: 16px;
+    .text__description {
+        font-size: 18px;
         padding-right: 20px;
     }
 }
@@ -717,10 +722,23 @@ h3 {
         width: 100%;
         max-width: 650px;
         margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 30px;
        
     }
     
     .square {
+        width: 115px;
+        height: 115px;
+        background-color: #5e42b0;
+        margin-top: -80px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .square_left {
         width: 115px;
         height: 115px;
         background-color: #5e42b0;
@@ -739,7 +757,7 @@ h3 {
         margin-top: 50px;
     }
     
-    .text__body__with__image {
+    .text__description {
         font-size: 24px;
         padding-right: 30px;
         margin-bottom: 100px;
@@ -975,7 +993,7 @@ h3 {
         
         z-index: 2;
         top: 38%;
-        right: -57.5px;
+        right: -57px;
     }
     
     .square_left {
@@ -993,7 +1011,7 @@ h3 {
         right: 94%;
     }
     
-    .text__body__with__image {
+    .text__description {
         font-size: 24px;
         padding-right: 30px;
     }
@@ -1015,6 +1033,7 @@ h3 {
         background-color: #0a0e34;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         margin-top: 25px;
     }
     
@@ -1121,6 +1140,7 @@ h3 {
         background-color: #0a0e34;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         margin-top: 25px;
     }
     
@@ -1168,7 +1188,7 @@ h3 {
     }
     
     .footer__title__text {
-        font-size: 80px;
+        font-size: 76px;
         color: #ffffff;
         margin-left: auto;
         margin-right: auto;
@@ -1176,7 +1196,7 @@ h3 {
     }
     
     .footer__title__text__buttom {
-        font-size: 36px;
+        font-size: 34px;
         text-transform: uppercase;
         color: #9b8ec1;
         
@@ -1191,7 +1211,7 @@ h3 {
     }
     
     .footer_btn {
-        width: 315px;
+        width: 300px;
         height: 80px;
         border: 0;
         padding-left: 50px;
@@ -1262,7 +1282,6 @@ h3 {
         align-items: center;
         justify-content: center;
         
-        margin-top: 55px;
         margin-bottom: 160px;
     }
     

@@ -62,10 +62,10 @@
                    <div class="container_main_right">
                         <h2 class="title__main">Athlets</h2>
                         <picture class="athlets_641">
-                            <source srcset="https://demetr-code.github.io/retro/images/footballer_192.png" media="(max-width: 460px)" class="athlets_641">
-                            <source srcset="https://demetr-code.github.io/retro/images/footballer_497.png" media="(max-width: 960px)" class="athlets_641">
+                            <source srcset="images/footballer_192.png" media="(max-width: 640px)">
+                            <source srcset="images/footballer_497.png" media="(max-width: 960px)">
 
-                            <img src="https://demetr-code.github.io/retro/images/footballer_566.png">
+                            <img src="images/footballer_566.png">
                         </picture>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                     <h2 class="title__main">Players</h2>
                         
                     <picture class="player">
-                        <source srcset="images/basketballer_302.png" media="(max-width: 460px)">
+                        <source srcset="images/basketballer_302.png" media="(max-width: 640px)">
                         <source srcset="images/basketballer_436.png" media="(max-width: 960px)">
                         
                         <img src="images/basketballer_991.png" alt="footballer">
@@ -170,29 +170,35 @@
             <div class="inner_chess_row">  
                 <div class="inner_chess"> 
                     <picture class="with_image_bg">
-                        <img src="images/be-active_640.jpg" alt="footballer" >
+                        <source srcset="images/be-active_640.jpg" alt="be active" media="(max-width: 460px)" class="athlets_641">
+                        <source srcset="images/be-active_960.jpg" media="(max-width: 960px)" class="athlets_641">
+
+                        <img src="images/be-active_1024.jpg">
                     </picture>
 
-                <div class="square">
-                    <div class="number__description__white">01</div>
-                </div>
+                    <div class="square">
+                        <div class="number__description__white">01</div>
+                    </div>
             
                 </div>
                 <div class="inner_chess">
-                <div class="container">
+                    <div class="container">
                     <h2 class="title__main__with__image">Be active</h2>
 
-                   <div class="text__body__with__image">
+                   <div class="text__description">
                         Post videos with your skills, Like and follow others to be more popular.
                     </div>
                 </div>
-            </div>
+                </div>
             </div>
             
             <div class="inner_chess_row_reverse">
                 <div class="inner_chess">
-                    <picture>
-                    <img src="images/find-contact_640.jpg" alt="find contact" class="with_image_bg">
+                    <picture> 
+                        <source srcset="images/find-contact_640.jpg" media="(max-width: 460px)" class="athlets_641">
+                        <source srcset="images/find-contact_960.jpg" media="(max-width: 960px)" class="athlets_641">
+
+                        <img src="images/find-contact_1024.jpg">
                     </picture>
 
                     <div class="square_left">
@@ -204,7 +210,7 @@
                     <div class="container">
                     <h2 class="title__main__with__image">Find contact</h2>
 
-                   <div class="text__body__with__image">
+                   <div class="text__description">
                         Contact others to find right coach or athlete you are looking for. 
                     </div>
                 </div>
@@ -213,20 +219,23 @@
             
             <div class="inner_chess_row">  
                 <div class="inner_chess"> 
-                <picture>
-                    <img src="images/work-it_640.jpg" alt="find contact" class="with_image_bg">
-                </picture>
+                    <picture> 
+                        <source srcset="images/work-it_640.jpg" media="(max-width: 460px)">
+                        <source srcset="images/work-it_960.jpg" media="(max-width: 960px)">
 
-                <div class="square">
-                    <div class="number__description__white">03</div>
+                        <img src="images/work-it_1024.jpg">
+                    </picture>
+
+                    <div class="square">
+                        <div class="number__description__white">03</div>
                     
+                    </div>
                 </div>
-            </div>
                 <div class="inner_chess">
                     <div class="container">
                     <h2 class="title__main__with__image">Work it</h2>
 
-                   <div class="text__body__with__image">
+                   <div class="text__description">
                         Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience. 
                     </div>
                 </div>
@@ -238,7 +247,7 @@
     
     <footer class="footer">
         <div class="container_footer">
-          <span class="footer__inherit">
+          <div class="footer__inherit">
               <div class="footer_square">
                     <svg width="60" height="50" viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg">
                         <g>
@@ -250,10 +259,10 @@
       
          
               <div class="footer__title">
-              <h2 class="footer__title__text">Download app</h2>
-              <span class="footer__title__text__buttom" >Show everyone what you can do!</span>
+                  <h2 class="footer__title__text">Download app</h2>
+                  <span class="footer__title__text__buttom" >Show everyone what you can do!</span>
+              </div>
           </div>
-          </span>
           
           <div class="footer__btns">
               <button class="footer_btn" type="button">
