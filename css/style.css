@@ -544,6 +544,10 @@ h3 {
 
 @media (min-width: 641px) and (max-width: 960px) {
     
+    .main {
+        overflow: hidden;
+    }
+    
     .container_main_right {
         width: 100%;
         max-width: 455px;
@@ -766,6 +770,10 @@ h3 {
 
 @media (min-width: 961px) {
     
+    .main {
+        overflow: hidden;
+    }
+    
     .container_main_right {
         
         max-width: 700px;
@@ -951,14 +959,14 @@ h3 {
     .inner_chess {
         display: flex;
         width: 50%;
-        max-height: 730px;
+        
         position: relative;
         background-color: #ffffff;
         justify-content: center;
         align-items: center;
     }
     
-    .with_image_bg {
+    .inner_chess_img {
 
         width: 100%;
         
@@ -1073,11 +1081,14 @@ h3 {
         margin: auto;
     }
     
+    .footer__inherit {
+        margin-bottom: 130px;
+    }
+    
     .footer__title {
         display: flex;
         flex-direction: column;
         margin-top: 55px;
-        margin-bottom: 130px;
     }
     
     .footer__title__text {
@@ -1175,16 +1186,18 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: center;
-        
         fill: #ffffff;
         margin: auto;
+    }
+    
+    .footer__inherit {
+        margin-bottom: 280px;
     }
     
     .footer__title {
         display: flex;
         flex-direction: column;
         margin-top: 55px;
-        margin-bottom: 280px;
     }
     
     .footer__title__text {
