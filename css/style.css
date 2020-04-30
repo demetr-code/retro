@@ -685,7 +685,7 @@ h3 {
         
         height: 480px;
         top: 15px;
-        right: -80%;
+        right: -130%;
         
         position: absolute;
     }
@@ -736,6 +736,7 @@ h3 {
         height: 115px;
         background-color: #5e42b0;
         margin-top: -80px;
+        margin-left: 30px;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -747,6 +748,7 @@ h3 {
         height: 115px;
         background-color: #5e42b0;
         margin-top: -80px;
+        margin-left: 30px;
         position: absolute;
         display: flex;
         justify-content: center;
