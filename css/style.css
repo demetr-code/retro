@@ -379,7 +379,6 @@ h3 {
     }
     
    
-    
     .description__section {
         margin-bottom: 25px;
         display: flex;
@@ -969,8 +968,7 @@ h3 {
     }
     
     .inner_chess_img {
-
-        width: 100%;
+        max-width: 100%
         
     }
     
@@ -983,8 +981,9 @@ h3 {
     
     .title__main__with__image {
         text-transform: uppercase;
-        font-size: 77px;
+        font-size: 74px;
         margin-bottom: 25px;
+        padding-right: 40px;
         color: #e7e7e7;
     }
     
