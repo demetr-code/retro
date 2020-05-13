@@ -539,6 +539,11 @@ h3 {
         font-size: 18px;
         padding-right: 20px;
     }
+    
+    .inner_chess_img {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
@@ -767,6 +772,10 @@ h3 {
         padding-right: 30px;
         margin-bottom: 100px;
     }
+    
+    .inner_chess_img {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 961px) {
@@ -968,7 +977,6 @@ h3 {
     }
     
     .inner_chess_img {
-        max-width: 100%;
         width: 100%;
     }
     
